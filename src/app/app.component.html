@@ -1,15 +1,18 @@
-<!-- UC-3 Ability to Launch Bridgelabz Site in a new Tab on clicking BridgeLabz Logo.
+<!-- UC-4 Ability to display Hello from Bridgelabz with a user inputted Name.
 @author : DIVYA MUNDHADA
 @since : 21.08.2021 
 -->
 
-<div class="container">
-  <h1>{{this.title}}</h1>
+<div class ="container">
+  <h1>Hello {{this.userName}} from BridgeLabz</h1>
   <img [src] ="imgUrl" 
       (click) = "onClick($event)"
         alt="The Bridgelabz Logo: a Bridge to 
               Employement through Lab Works."
  />
+</div>
+<div class="container">
+      <input [(ngModel)] ="userName" /> <br/> <br/>
 </div>
 
 <router-outlet>

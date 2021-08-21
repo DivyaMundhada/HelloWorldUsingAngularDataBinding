@@ -3,6 +3,7 @@
 
 //Importing core modules of Angular.
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -25,7 +26,8 @@ import { AppComponent } from './app.component';
   //Various imports needed for application can be added here.
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
 
   //Services like http-services are added.
