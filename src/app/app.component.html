@@ -1,4 +1,4 @@
-<!-- UC-2 To display “Hello from BridgeLabz” using Property Data Binding.
+<!-- UC-3 Ability to Launch Bridgelabz Site in a new Tab on clicking BridgeLabz Logo.
 @author : DIVYA MUNDHADA
 @since : 21.08.2021 
 -->
@@ -6,6 +6,7 @@
 <div class="container">
   <h1>{{this.title}}</h1>
   <img [src] ="imgUrl" 
+      (click) = "onClick($event)"
         alt="The Bridgelabz Logo: a Bridge to 
               Employement through Lab Works."
  />
